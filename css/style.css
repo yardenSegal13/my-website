@@ -15,12 +15,15 @@ h5 {
 }
 
 h1 {
-  font-size: 96px;
-  line-height: 1.2;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 86px;
 }
 
 h2 {
-  font-size: 64px;
+  font-size: 18px;
+  font-family: var(--secondary-font);
+  line-height: 27px;
 }
 
 h6 {
@@ -32,6 +35,16 @@ p {
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
+  font-family: var(--secondary-font);
+}
+
+.hero h1 {
+  font-size: 96px;
+  line-height: 1.2;
+}
+
+.hero h2 {
+  font-size: 36px;
 }
 
 .hero h2 {
@@ -81,11 +94,30 @@ p {
   border-color: var(--primary-color);
 }
 
-.display-project {
+.display-project-photo {
   background-color: var(--secondary-color);
   padding: 40px;
 }
 
+.content-container {
+  margin-top: 150px;
+}
+
 .content {
   padding: 50px;
+}
+
+@media (max-width: 990px) {
+  .hero h1 {
+    font-size: 50px;
+  }
+
+  .hero {
+    padding: 80px 20px;
+  }
+
+  .content {
+    text-align: center;
+    padding: 20px;
+  }
 }
